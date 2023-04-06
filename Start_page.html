@@ -1,0 +1,52 @@
+SampleMonitorPane.html
+    <div class="content-fit">
+    <div class="accordion">
+<h3 target="sample-readings">$%localizedString(Basic Readings)#$</h3>
+    <div id="sample-readings">
+    <table class="datatable">
+        <tr>
+        <th>&nbsp;</th>
+        <th>$%localizedString(Minimum)#$</th>
+        <th>$%localizedString(Present)#$</th>
+        <th>$%localizedString(Maximum)#$</th>
+        </tr>
+        <tr class="minor">
+        <td>$%localizedString(I a)#$ <span unitsreg="I a"></span></td>
+        <td regname="I a mn"></td>
+        <td regname="I a"></td>
+        <td regname="I a mx"></td>
+        </tr>
+        <tr class="minor">
+        <td>$%localizedString(I b)#$ <span unitsreg="I b"></span></td>
+        <td regname="I b mn"></td>
+        <td regname="I b"></td>
+        <td regname="I b mx"></td>
+        </tr>
+    </table>
+    </div>
+<h3 target="sample-energy">$%localizedString(Energy Readings)#$</h3>
+    <div id="sample-energy">
+    <table class="datatable">
+        <tr>
+        <th>&nbsp;</th>
+        <th>$%localizedString(Present)#$</th>
+        </tr>
+        <tr>
+        <td>$%localizedString(Active Energy)#$ <span unitsreg="kWh del-rec"></span></td>
+        <td regname="kWh del-rec"></td>
+        </tr>
+        <tr>
+        <td>$%localizedString(Reactive Energy)#$ <span unitsreg="kVARh del-rec"></span></td>
+        <td regname="kVARh del-rec"></td>
+        </tr>
+    </table>
+    </div>
+    </div>
+ 
+ 
+<script type="text/javascript">
+ 
+instantaneousReadings.initInstantaneousReadings('sample-readings');
+ 
+</script>
+</div>
